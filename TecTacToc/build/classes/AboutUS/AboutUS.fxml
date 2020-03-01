@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="908.0" style="-fx-background-color: #0b3660;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AboutUS.AboutUSController">
+   <children>
+      <Button fx:id="backToMain" layoutX="391.0" layoutY="502.0" mnemonicParsing="false" onAction="#backToMain" onMouseEntered="#backToMainMouseEnter" onMouseExited="#backToMainMouseExit" prefHeight="31.0" prefWidth="127.0" style="-fx-background-color: #ff9;" text="Back" textFill="#0b3660">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <ImageView fitHeight="378.0" fitWidth="375.0" layoutX="35.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/IMG-20200106-WA0000.jpg" />
+         </image>
+      </ImageView>
+      <TextArea editable="false" layoutX="518.0" layoutY="161.0" prefHeight="281.0" prefWidth="331.0" style="-fx-background-color: #ff9; -fx-border-color: #ff9; -fx-border-style: Bold; -fx-border-width: 5;" text="&#10;                      XO game using Java.&#10;&#10; Copyright ©&#10;                •Mohamed Sabry&#10;                • Mariam Elfeky&#10;                •Yasmeen Atef&#10;                •Mohamed Farag&#10;&#10;&#10;                       Open Source Track&#10;            ITI Mansoura Branch - intake  40" />
+      <ImageView fitHeight="80.0" fitWidth="251.0" layoutX="329.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/xogame.jpg" />
+         </image>
+      </ImageView>
+      <Separator layoutX="455.0" layoutY="125.0" orientation="VERTICAL" prefHeight="354.0" prefWidth="0.0" />
+   </children>
+</Pane>

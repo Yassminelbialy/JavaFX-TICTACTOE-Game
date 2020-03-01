@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="908.0" style="-fx-background-color: #0b3660;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SingleMode.SingleModeController">
+   <children>
+      <Label layoutX="382.0" layoutY="38.0" prefHeight="32.0" prefWidth="144.0" text="Player Name" textFill="#ffff99">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <TextField fx:id="playerNameField" layoutX="298.0" layoutY="86.0" prefHeight="51.0" prefWidth="313.0" promptText="Enter Player Name" />
+      <RadioButton fx:id="checkO" layoutX="271.0" layoutY="187.0" mnemonicParsing="false">
+         <toggleGroup>
+            <ToggleGroup fx:id="XO" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="checkX" layoutX="611.0" layoutY="187.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="8.0" toggleGroup="$XO" />
+      <ImageView fitHeight="220.0" fitWidth="460.0" layoutX="229.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/images%20(2).jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" layoutX="116.0" layoutY="453.0" prefHeight="74.0" prefWidth="678.0" spacing="150.0">
+         <children>
+            <Button fx:id="backToMain" mnemonicParsing="false" onAction="#backToMain" onMouseEntered="#backToMainMouseEnter" onMouseExited="#backToMainMouseExit" opacity="0.0" prefHeight="44.0" prefWidth="148.0" text="Back" textFill="#ffff99">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="playGame" mnemonicParsing="false" onAction="#goToGamePane" onMouseEntered="#playGameMouseEnter" onMouseExited="#playGameMouseExit" opacity="0.0" prefHeight="44.0" prefWidth="151.0" text="Play" textFill="#ffff99">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
