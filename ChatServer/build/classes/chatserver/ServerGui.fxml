@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="388.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chatserver.ServerGuiController">
+   <children>
+      <ImageView disable="true" fitHeight="416.0" fitWidth="776.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/images.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="71.0" layoutY="41.0" text="XO Server" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="238.0" text="Server IP :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="on_off_Btn" layoutX="108.0" layoutY="170.0" mnemonicParsing="false" onAction="#on_offServer" prefHeight="39.0" prefWidth="78.0" text="ON">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="IP_textField" editable="false" layoutX="233.0" layoutY="242.0" prefHeight="26.0" prefWidth="178.0" />
+   </children>
+</AnchorPane>
