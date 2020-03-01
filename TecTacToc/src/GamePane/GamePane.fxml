@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="908.0" style="-fx-background-color: #0b3660;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GamePane.GamePaneController">
+   <children>
+      <Label fx:id="player1Name" alignment="CENTER" layoutX="31.0" layoutY="108.0" prefHeight="45.0" prefWidth="194.0" text="Player 1" textFill="#e557ff">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="player2Name" alignment="CENTER" layoutX="663.0" layoutY="108.0" prefHeight="45.0" prefWidth="194.0" text="Player 2" textFill="#7fbcf1">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerTurn" alignment="CENTER" layoutX="172.0" layoutY="20.0" prefHeight="88.0" prefWidth="569.0" text="x" textFill="#7fbcf1">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="player1Score" alignment="CENTER" layoutX="53.0" layoutY="174.0" prefHeight="69.0" prefWidth="150.0" text="0" textFill="#e557ff">
+         <font>
+            <Font name="System Bold" size="47.0" />
+         </font>
+      </Label>
+      <Label fx:id="player2Score" alignment="CENTER" layoutX="685.0" layoutY="174.0" prefHeight="69.0" prefWidth="150.0" text="0" textFill="#7fbcf1">
+         <font>
+            <Font name="System Bold" size="47.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="246.0" layoutY="471.0" prefHeight="69.0" prefWidth="417.0" spacing="100.0">
+         <children>
+            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backToSingleMultiOnline" prefHeight="38.0" prefWidth="115.0" style="-fx-background-color: #ff9;" text="Back" textFill="#0b3660">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="newGameBtn" mnemonicParsing="false" onAction="#playNewGame" prefHeight="38.0" prefWidth="115.0" style="-fx-background-color: #ff9;" text="New Game" textFill="#0b3660">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" layoutX="296.0" layoutY="130.0" prefHeight="316.0" prefWidth="318.0" fx:id="xoBox">
+         <children>
+            <HBox alignment="CENTER" prefHeight="102.0" prefWidth="402.0" spacing="5.0">
+               <children>
+                  <Button fx:id="btn1" mnemonicParsing="false" onMouseClicked="#buttonHandle" onMouseEntered="#eventMouseEnter" onMouseExited="#eventMouseExit" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #00aaff;" textFill="#00aaff">
+                     <font>
+                        <Font name="System Bold" size="42.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btn2" mnemonicParsing="false" onMouseClicked="#buttonHandle" onMouseEntered="#eventMouseEnter" onMouseExited="#eventMouseExit" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #00aaff;" textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="42.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btn3" mnemonicParsing="false" onMouseClicked="#buttonHandle" onMouseEntered="#eventMouseEnter" onMouseExited="#eventMouseExit" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #00aaff;" textFill="#00aaff">
+                     <font>
+                        <Font name="System Bold" size="42.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="109.0" prefWidth="342.0" spacing="5.0">
+               <children>
+                  <Button fx:id="btn4" mnemonicParsing="false" onMouseClicked="#buttonHandle" onMouseEntered="#eventMouseEnter" onMouseExited="#eventMouseExit" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #00aaff;" textFill="#00aaff">
+                     <font>
+                        <Font name="System Bold" size="42.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btn5" mnemonicParsing="false" onMouseClicked="#buttonHandle" onMouseEntered="#eventMouseEnter" onMouseExited="#eventMouseExit" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #00aaff;" textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="42.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btn6" mnemonicParsing="false" onMouseClicked="#buttonHandle" onMouseEntered="#eventMouseEnter" onMouseExited="#eventMouseExit" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #00aaff;" textFill="#00aaff">
+                     <font>
+                        <Font name="System Bold" size="42.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="101.0" prefWidth="402.0" spacing="5.0">
+               <children>
+                  <Button fx:id="btn7" mnemonicParsing="false" onMouseClicked="#buttonHandle" onMouseEntered="#eventMouseEnter" onMouseExited="#eventMouseExit" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #00aaff;" textFill="#00aaff">
+                     <font>
+                        <Font name="System Bold" size="42.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btn8" mnemonicParsing="false" onMouseClicked="#buttonHandle" onMouseEntered="#eventMouseEnter" onMouseExited="#eventMouseExit" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #00aaff;" textFill="#00aaff">
+                     <font>
+                        <Font name="System Bold" size="42.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btn9" mnemonicParsing="false" onMouseClicked="#buttonHandle" onMouseEntered="#eventMouseEnter" onMouseExited="#eventMouseExit" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #00aaff;" textFill="#00aaff">
+                     <font>
+                        <Font name="System Bold" size="42.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <MediaView fx:id="mediaView" fitHeight="330.0" fitWidth="400.0" layoutX="254.0" layoutY="128.0" visible="false" />
+      <Separator layoutX="225.0" layoutY="470.0" prefHeight="0.0" prefWidth="462.0" />
+      <Label fx:id="serverError" alignment="CENTER" layoutX="282.0" layoutY="265.0" prefHeight="45.0" prefWidth="341.0" text="Server not found" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerOut" alignment="CENTER" layoutX="282.0" layoutY="265.0" prefHeight="45.0" prefWidth="341.0" text="The player out" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

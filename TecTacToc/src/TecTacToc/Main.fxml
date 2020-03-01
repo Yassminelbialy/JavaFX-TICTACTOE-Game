@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TecTacToc.MainController">
+   <children>
+      <ImageView fitHeight="579.0" fitWidth="930.0" layoutX="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/unnamed.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="aboutUS" contentDisplay="CENTER" layoutX="362.0" layoutY="429.0" mnemonicParsing="false" onAction="#aboutTheCreatorOfTheGame" onMouseEntered="#aboutUSMouseEnter" onMouseExited="#aboutUSMouseExit" opacity="0.0" prefHeight="31.0" prefWidth="182.0" text="About" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
+      <Button fx:id="exitGame" layoutX="362.0" layoutY="495.0" mnemonicParsing="false" onAction="#exitTheGame" onMouseEntered="#exitGameMouseEnter" onMouseExited="#exitGameMouseExit" opacity="0.0" prefHeight="31.0" prefWidth="182.0" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
+      <Button fx:id="playGame" alignment="CENTER" cacheShape="false" contentDisplay="CENTER" layoutX="362.0" layoutY="361.0" mnemonicParsing="false" onAction="#enterTheGame" onMouseEntered="#startGameMouseEnter" onMouseExited="#startGameMouseExit" opacity="0.0" prefHeight="31.0" prefWidth="182.0" text="Play" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
+   </children>
+</Pane>
